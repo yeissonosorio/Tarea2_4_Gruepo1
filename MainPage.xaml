@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+             x:Class="Tarea2_4_Gruepo1.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+            Background="White">
+
+    <ScrollView>
+        <StackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <toolkit:MediaElement x:Name="mediaElement"
+                      ShouldAutoPlay="True"
+                      ShouldShowPlaybackControls="True"
+                      Source=""
+                      HeightRequest="300"
+                      WidthRequest="400"/>
+            
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btngrabar" Text="Grabar y Guardar" Margin="70,0,10,0" WidthRequest="180" Background="#FFC300" Clicked="btngrabar_Clicked"></Button>
+                
+            </StackLayout>
+ 
+        
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
